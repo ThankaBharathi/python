@@ -5,3 +5,6 @@ def thanka(items):
     return count
 
 print(thanka([1,2,3,4,5]))
+
+#Sum Items in List
+#Write a Python program to sum all the items in a list.
