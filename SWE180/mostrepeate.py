@@ -2,6 +2,9 @@ a = "swiss"
 
 count = {}
 for char in a:
-    if char not in count:
-        print(char)
-    
+    count[char] = count.get(char, 0)+1
+for b in a:
+    if count[b] == 1:
+        print(b)
+        break
+ 
