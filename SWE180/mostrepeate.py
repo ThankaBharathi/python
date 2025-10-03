@@ -7,4 +7,4 @@ for b in a:
     if count[b] == 1:
         print(b)
         break
- 
+ # repeated charector
