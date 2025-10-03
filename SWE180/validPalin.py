@@ -13,4 +13,4 @@ class Solution:
             right -= 1
         return True
         
-        
+# valid palindrome in leetcode sum
