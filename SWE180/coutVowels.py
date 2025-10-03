@@ -13,3 +13,5 @@ s = "Hello World"
 count = sum(1 for char in s if char.lower() in 'aeiou')
 print(count)
 
+
+# count the vowels 
