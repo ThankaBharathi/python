@@ -27,3 +27,16 @@ class Human:
 
 thanka = Human("Orange",19.2,43)
 print(thanka.Color)
+
+
+
+class Node:
+    data = None
+    pointer = None
+    def __init__(self,data):
+        self.data = data 
+
+node1 = Node(10)
+
+print(node1.data)
+    
