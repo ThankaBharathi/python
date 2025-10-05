@@ -1,2 +1,6 @@
-n = 11
-print(n // 2)
+class Solution:
+    def floorSqrt(self, n):
+        sqrt = n ** 0.5
+        return int(sqrt)
+        
+        
