@@ -17,3 +17,13 @@ xerox2.Gender = "Male"
 xerox2.Adress = "1/51b, Bungalow street vilathikulam"
 
 print(xerox1.Name)
+
+
+class Human:
+    def __init__(self,Color,Hight,Weight):
+        self.Color = Color
+        self.Hight = Hight
+        self.Weight = Weight
+
+thanka = Human("Orange",19.2,43)
+print(thanka.Color)
