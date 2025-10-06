@@ -33,10 +33,18 @@ print(thanka.Color)
 class Node:
     data = None
     pointer = None
-    def __init__(self,data):
+    def __init__(self,data,pointer):
         self.data = data 
+        self.pointer = None
 
-node1 = Node(10)
+node1 = Node(10,121)
+#node2 = Node(20)
+#node3 = Node(30)
+#node4 = Node(40)
 
 print(node1.data)
+print(node1.pointer)
+print(node1)
+
+
     
