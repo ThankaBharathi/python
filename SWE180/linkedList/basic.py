@@ -45,7 +45,7 @@ node1 = Node(10,121)
 print(node1.data)
 print(node1.pointer)
 print(node1)
-'''
+
 class Node:
     data = None
     pointer = None
@@ -70,8 +70,40 @@ temp = head
 while (temp is not None):
     print(temp.data)
     temp = temp.pointer
+'''
 
-
-
-
+class Node:
     
+    def __init__(self,data):
+        self.data = data
+        self.pointer = None
+    
+class LinkedList:
+    
+    def __init__(self):
+        self.head = None
+        
+    def add(self,data):
+        newNode = Node(data)
+        if self.head is None:
+            self.head = newNode
+        else:
+            temp = self.head
+            while (temp.pointer is not None):
+                temp = temp.pointer
+            temp.pointer = newNode
+    
+    def print(self):
+        temp = self.head
+        while(temp is not None):
+            print(temp.data)
+            temp = temp.pointer
+        
+linkedList = LinkedList()
+linkedList.add(1)
+linkedList.add(2)
+linkedList.add(3)
+linkedList.add(4)
+linkedList.add(5)
+linkedList.add(6)
+LinkedList.print()
