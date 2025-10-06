@@ -76,7 +76,7 @@ l1.append(30)
 l1.append(40)
 l1.insertatbeggin(5)
 l1.display()
-        
+
                   
         
 '''
