@@ -29,7 +29,7 @@ thanka = Human("Orange",19.2,43)
 print(thanka.Color)
 
 
-
+'''
 class Node:
     data = None
     pointer = None
@@ -45,6 +45,8 @@ node1 = Node(10,121)
 print(node1.data)
 print(node1.pointer)
 print(node1)
+'''
+
 
 
     
