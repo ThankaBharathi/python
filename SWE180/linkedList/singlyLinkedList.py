@@ -74,5 +74,18 @@ l1.display()
         
                   
         
-    
+'''
+Creating a singly linked list 
+add node at the end and display
+
+1) create a basic node class 
+2) create a linkedlist class in that create a head 
+3) add at end so for that create a new node using class Node 
+4) first check the head is None means add node in the head 
+5) traverse till the end 
+6) add at the end 
+7) display at last using temp 
+
+
+'''
     
