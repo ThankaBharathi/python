@@ -47,6 +47,11 @@ class LinkedList():
     def __init__(self):
         self.head = None
         
+    def insertatbeggin(self,data):
+        new_node = Node(data)
+        new_node.pointer = self.head  # new node la ulla pointer la head address aa save pannanum
+        self.head = new_node  # head la new node la poturu 
+    
     def append(self,data):
         new_node = Node(data)
 
@@ -70,6 +75,7 @@ l1.append(10)
 l1.append(20)
 l1.append(30)
 l1.append(40)
+l1.insertatbeggin(5)
 l1.display()
         
                   
