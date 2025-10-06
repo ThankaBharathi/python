@@ -90,6 +90,6 @@ add node at the end and display
 5) traverse till the end 
 6) add at the end 
 7) display at last using temp 
-
+8) study next 
 '''
     
