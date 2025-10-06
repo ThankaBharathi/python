@@ -46,6 +46,31 @@ print(node1.data)
 print(node1.pointer)
 print(node1)
 '''
+class Node:
+    data = None
+    pointer = None
+    
+    def __init__(self,data):
+        self.data = data 
+        self.pointer = None
+
+head = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+
+head.pointer = node2
+node2.pointer = node3
+
+print(head.data)
+print(head.pointer)
+print(node2)
+
+temp = head
+
+while (temp is not None):
+    print(temp.data)
+    temp = temp.pointer
+
 
 
 
