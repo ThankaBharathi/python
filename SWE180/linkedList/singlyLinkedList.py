@@ -178,4 +178,25 @@ class LinkedList:
             temp = temp.pointer
         temp.pointer = newNode
     
+    def atPosition(self,data,position):
+        newNode = Node(data)
+        if position == 0:
+            newNode.pointer = self.head
+            self.head = newNode
+            return
+        temp = self.head
+        for _ in range(position - 1):
+            if temp is None:
+                return("position out of range")
+            temp = temp.pointer
+        if temp is None:
+            return("position out of range")
+        newNode.pointer = temp.pointer
+        temp.pointer = newNode
     
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data,end=" -> ")
+            
+            
