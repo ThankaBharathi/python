@@ -168,4 +168,14 @@ class LinkedList:
         newNode.pointer = self.head
         self.head = newNode
     
+    def append(self,data):
+        newNode = Node(data)
+        if self.head is None:
+            self.head = newNode
+            return
+        temp = self.head
+        while temp.pointer:
+            temp = temp.pointer
+        temp.pointer = newNode
+    
     
