@@ -243,7 +243,7 @@ class LinkedList:
         del node_to_delete
         
 l1 = LinkedList()
-l1.append(10)
+l1.append(110)
 l1.append(20)
 l1.append(30)
 l1.append(40)
@@ -254,4 +254,4 @@ l1.delBegin()
 l1.delEnd()
 l1.delAtPosition(3)
 l1.display()
-#
+
