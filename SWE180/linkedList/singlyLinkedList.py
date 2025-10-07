@@ -209,6 +209,23 @@ class LinkedList:
         self.head = self.head.pointer
         del temp
         
+    def delEnd(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        if self.head.pointer is None:
+            self.head = None
+            return
+        temp = self.head
+        while temp.pointer.pointer:
+            temp = temp.pointer
+        del temp.pointer
+        temp.pointer = None
+    
+    def delAtPosition(self):
+        
+    
+        
 
 l1 = LinkedList()
 l1.append(10)
