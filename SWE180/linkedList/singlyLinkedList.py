@@ -198,5 +198,15 @@ class LinkedList:
         temp = self.head
         while temp:
             print(temp.data,end=" -> ")
-            
-            
+            temp = temp.pointer
+        print("None")
+
+l1 = LinkedList()
+l1.append(10)
+l1.append(20)
+l1.append(30)
+l1.append(40)
+l1.append(60)
+l1.atBegin(0)
+l1.atPosition(50,4)
+l1.display()
