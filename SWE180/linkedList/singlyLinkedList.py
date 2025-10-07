@@ -36,7 +36,7 @@ l1.append(40)
 l1.display()
             
             
-  '''
+  
   
 class Node:
     def __init__(self,data):
@@ -77,7 +77,7 @@ l1.append(40)
 l1.insertatbeggin(5)
 l1.display()
 
-                  
+        '''          
         
 '''
 Creating a singly linked list 
@@ -93,3 +93,44 @@ add node at the end and display
 8) study next 
 '''
     
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.pointer = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+    
+    def atBegin(self,data):
+        new_node = Node(data)
+        new_node.pointer = self.head
+        self.head = new_node
+    
+    def append(self,data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        temp = self.head
+        while temp.pointer:
+            temp = temp.pointer
+        temp.pointer = new_node
+        
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data,end=" -> ")
+            temp = temp.pointer
+        print("None")
+
+l1 = LinkedList()
+l1.append(20)
+l1.append(30)
+l1.append(40)
+l1.append(50)
+l1.append(60)
+l1.atBegin(10)
+l1.display()
+        
+            
