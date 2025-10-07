@@ -222,11 +222,26 @@ class LinkedList:
         del temp.pointer
         temp.pointer = None
     
-    def delAtPosition(self):
+    def delAtPosition(self,position):
+        if self.head is None:
+            print("List is empty!")
+            return
+        if position == 0:
+            self.delBegin()
+            return
+        temp = self.head
+        for _ in range(position - 1):
+            if temp.pointer is None:
+                print("Position out of range")
+                return
+            temp = temp.pointer
+        node_to_delete = temp.pointer
+        if node_to_delete is None:
+            print("Position out of range")
+            return
+        temp.pointer = node_to_delete.pointer
+        del node_to_delete
         
-    
-        
-
 l1 = LinkedList()
 l1.append(10)
 l1.append(20)
@@ -236,4 +251,7 @@ l1.append(60)
 l1.atBegin(0)
 l1.atPosition(50,4)
 l1.delBegin()
+l1.delEnd()
+l1.delAtPosition(3)
 l1.display()
+
