@@ -154,3 +154,18 @@ l1.insert(60,5)
 l1.display()
 '''
         
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.pointer = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+    
+    def atBegin(self,data):
+        newNode = Node(data)
+        newNode.pointer = self.head
+        self.head = newNode
+    
+    
