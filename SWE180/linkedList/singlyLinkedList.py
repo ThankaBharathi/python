@@ -244,7 +244,7 @@ class LinkedList:
         
 l1 = LinkedList()
 l1.append(110)
-l1.append(20)
+l1.append(200)
 l1.append(30)
 l1.append(40)
 l1.append(60)
