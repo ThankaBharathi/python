@@ -200,6 +200,15 @@ class LinkedList:
             print(temp.data,end=" -> ")
             temp = temp.pointer
         print("None")
+    
+    def delBegin(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        temp = self.head
+        self.head = self.head.pointer
+        del temp
+        
 
 l1 = LinkedList()
 l1.append(10)
@@ -209,4 +218,5 @@ l1.append(40)
 l1.append(60)
 l1.atBegin(0)
 l1.atPosition(50,4)
+l1.delBegin()
 l1.display()
