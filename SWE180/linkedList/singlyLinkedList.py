@@ -92,7 +92,7 @@ add node at the end and display
 7) display at last using temp 
 8) study next 
 '''
-    
+'''
 class Node:
     def __init__(self,data):
         self.data = data
@@ -152,5 +152,5 @@ l1.append(70)
 l1.atBegin(10)
 l1.insert(60,5)
 l1.display()
-
+'''
         
