@@ -255,4 +255,4 @@ l1.delEnd()
 l1.delAtPosition(3)
 l1.display()
 
-12345
+123456
