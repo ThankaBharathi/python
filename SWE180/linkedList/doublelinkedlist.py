@@ -11,3 +11,5 @@
 # create a append function 
 
 # create a function for adding element at position
+
+# create a delete function
