@@ -13,3 +13,5 @@
 # create a function for adding element at position
 
 # create a delete function
+
+# delete at specific places
