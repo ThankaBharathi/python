@@ -7,3 +7,5 @@
 # create a seperate seperate function
 
 # create a begin function for adding node
+
+# create a append function 
