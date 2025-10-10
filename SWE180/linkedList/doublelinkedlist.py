@@ -15,5 +15,10 @@ def take_input():
     value = int(input("Enter the value of Node :-"))
     head = None
     while(value != -1):
+        newNode = Node(value)
+        if(head == None):
+            head = newNode
+            
+             
         
         
