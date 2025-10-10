@@ -1,1 +1,1 @@
-d = 3
+print(count("Thanka"))
