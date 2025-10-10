@@ -1,1 +1,1 @@
-print(count("Thanka"))
+print(len("Thanka"))
