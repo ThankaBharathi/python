@@ -1,5 +1,4 @@
 class Solution:
-    
     def insertInMiddle(self, head, x):
         newNode = Node(x)
         if head is None:
