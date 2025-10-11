@@ -3,6 +3,7 @@ class Solution:
     def insertInMiddle(self, head, x):
         newNode = Node(x)
         if head is None:
+            
             return newNode
         if head.next is Node:
             head.next = newNode
