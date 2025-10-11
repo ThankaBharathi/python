@@ -13,7 +13,8 @@ class Solution:
         
         while fast.next and fast.next.next:
             slow = slow.next 
-            fast = fast.next.next 
+            fast = fast.next.
+             
         newNode.next = slow.next 
         slow.next = newNode
         return head 
