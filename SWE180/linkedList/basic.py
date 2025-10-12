@@ -107,3 +107,4 @@ linkedList.add(4)
 linkedList.add(5)
 linkedList.add(6)
 LinkedList.print()
+1
