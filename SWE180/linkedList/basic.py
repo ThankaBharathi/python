@@ -108,8 +108,7 @@ linkedList.add(5)
 linkedList.add(6)
 linkedList.add(7)
 linkedList.add(8)
-linkedList.add(9)
-linkedList.add(10)
+
 
 
 LinkedList.print()
