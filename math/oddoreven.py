@@ -1,0 +1,5 @@
+class Solution:
+    def isEven (self, n):
+        return True if n % 2 == 0 else False
+       
+       
