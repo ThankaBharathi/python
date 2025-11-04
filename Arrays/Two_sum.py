@@ -28,3 +28,29 @@ for i in range(len(arr)):
         break
 if not found:
     print(False)
+
+
+class Solution:
+	def twoSum(self, arr, target):
+	    arr.sort()
+	    found = False
+	    first = 0
+	    last = len(arr)-1
+	    while first < last:
+	        current_sum = arr[first] + arr[last]
+	        if current_sum == target:
+	            return True
+	            found = True
+	            break
+	        elif current_sum < target:
+	            first += 1
+	        else:
+	            last -= 1
+	    if not found:
+	        return False
+	       
+	            
+	    
+	    
+	    
+		
