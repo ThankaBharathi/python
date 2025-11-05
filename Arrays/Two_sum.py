@@ -29,3 +29,21 @@ for i in range(len(arr)):
 if not found:
     print(False)
 
+# optimized 
+
+arr = [0, -1, 2, -3, 8]
+target = 5
+
+seen = {}
+for i,num in enumerate(arr):
+    need = target - num
+    if need in seen:
+        print([seen[need],i])
+        break
+    seen[num] = i
+print([])
+    
+
+    
+   
+    
